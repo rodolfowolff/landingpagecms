@@ -1,4 +1,6 @@
 import { GetServerSideProps } from "next";
+import { DefaultSeo } from "next-seo";
+import { defaultSEO } from "../../next-seo.config";
 import { Features } from "../components/Features";
 import { Hero } from "../components/Hero";
 import { Pricing } from "../components/Pricing";
@@ -14,6 +16,7 @@ export default function Home() {
 
   return (
     <>
+      <DefaultSeo {...defaultSEO} />
       <Hero title={data.page.title} subtitle={data.page.subtitle} />
       <Features />
       <Pricing />
