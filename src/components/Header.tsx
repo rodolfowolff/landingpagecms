@@ -2,6 +2,7 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { SunIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -92,14 +93,16 @@ export function Header() {
             >
               <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
-                    <span className="sr-only">Workflow</span>
-                    <img
-                      className="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                      alt=""
-                    />
-                  </a>
+                  {/* <a href="#"> */}
+                  <span className="sr-only">Workflow</span>
+                  <Image
+                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    width={600}
+                    height={600}
+                    className="h-8 w-auto sm:h-10"
+                    alt="Workflow"
+                  />
+                  {/* </a> */}
                   <div className="-mr-2 flex items-center md:hidden">
                     <Popover.Button className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                       <span className="sr-only">Open main menu</span>
@@ -149,10 +152,12 @@ export function Header() {
               <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <div>
-                    <img
-                      className="h-8 w-auto"
+                    <Image
                       src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                      alt=""
+                      width={600}
+                      height={600}
+                      className="h-8 w-auto"
+                      alt="Workflow"
                     />
                   </div>
                   <div className="-mr-2">
