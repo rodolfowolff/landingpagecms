@@ -1,7 +1,7 @@
 type HeroProps = {
   title: string;
   subtitle: string;
-}
+};
 
 export function Hero({ title, subtitle }: HeroProps) {
   return (
@@ -21,7 +21,7 @@ export function Hero({ title, subtitle }: HeroProps) {
                   href="#"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                 >
-                  Get started
+                  Comprar agora
                 </a>
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
@@ -29,7 +29,7 @@ export function Hero({ title, subtitle }: HeroProps) {
                   href="#"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                 >
-                  Live demo
+                  Ver exemplo
                 </a>
               </div>
             </div>
@@ -37,5 +37,5 @@ export function Hero({ title, subtitle }: HeroProps) {
         </main>
       </div>
     </div>
-  )
+  );
 }
