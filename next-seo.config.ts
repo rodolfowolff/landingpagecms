@@ -10,6 +10,7 @@ const seo = {
     description,
     title,
     type: "website",
+    locale: "pt_BR",
     url,
   },
 };
